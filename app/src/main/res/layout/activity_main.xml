@@ -42,17 +42,19 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
-                    <CheckedTextView
-                        android:id="@+id/checkedTextView"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="CheckedTextView" />
+                    <!--<CheckedTextView-->
 
-                    <ProgressBar
-                        android:id="@+id/progressBar"
-                        style="?android:attr/progressBarStyle"
+                    <ScrollView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/boardItemArea1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" />
+                    </ScrollView>
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -61,12 +63,12 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
-                    <RatingBar
-                        android:id="@+id/ratingBar"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        tools:layout_editor_absoluteX="0dp"
-                        tools:layout_editor_absoluteY="155dp" />
+                    <!--<RatingBar-->
+                        <!--android:id="@+id/ratingBar"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--tools:layout_editor_absoluteX="0dp"-->
+                        <!--tools:layout_editor_absoluteY="155dp" />-->
                 </LinearLayout>
 
                 <LinearLayout
@@ -75,12 +77,12 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
-                    <RatingBar
-                        android:id="@+id/ratingBar2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        tools:layout_editor_absoluteX="0dp"
-                        tools:layout_editor_absoluteY="155dp" />
+                    <!--<RatingBar-->
+                        <!--android:id="@+id/ratingBar2"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--tools:layout_editor_absoluteX="0dp"-->
+                        <!--tools:layout_editor_absoluteY="155dp" />-->
                 </LinearLayout>
             </FrameLayout>
         </LinearLayout>

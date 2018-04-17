@@ -20,6 +20,8 @@ import java.io.IOException;
 public class DataAPI {
 
     String boards;
+    String faqs;
+    String tags;
     OkHttpClient client;
 
     DataAPI() {
@@ -36,8 +38,13 @@ public class DataAPI {
                 "{name: 'Vaayushastra', lastMessage:'Elections in Progress', tagColor:'#abcabc'}," +
                 "{name: 'Vaayushastra', lastMessage:'Elections in Progress', tagColor:'#abcabc'}," +
                 "{name: 'Vaayushastra', lastMessage:'Elections in Progress', tagColor:'#abcabc'}]";
+        faqs = "[ {q: 'Where to we get printing pages', a: 'Printing pages are sold at the office counter', tags:['stationary', 'supplies']}, " +
+                " {q: 'Where to we get Assignment sheets', a: 'Assignment sheets are sold at the office counter', tags:['stationary', 'submission']} " +
+                "]";
 
-
+        tags = "{ 'stationary':{'name': 'stationary', 'color':'#782312'}," +
+                " 'supplies': {'name': 'supplies', 'color':'#147856'}," +
+                " 'submission': {'name': 'submission', 'color':'#252589'}}";
 //       client = new OkHttpClient();
 //
 //       try  {
@@ -62,5 +69,16 @@ public class DataAPI {
         return boards;
 
 
+    }
+    String getTags() {
+
+        return tags;
+
+
+    }
+
+
+    String getFaqs()    {
+        return faqs;
     }
 }
